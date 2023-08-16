@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <button class="move-option" id="rock" onclick="calculateScore('rock')">Rock</button>
+    <button class="move-option" id="paper" onclick="calculateScore('paper')">Paper</button>
+    <button class="move-option" id="scissors" onclick="calculateScore('scissors')">Scissors</button>
+
+
+    <div class="score">
+        <p> Human Score: <p id="human-score"> 0 </p> </p>
+        <p> AI Score: <p id="ai-score"> 0 </p> </p>
+    </div>
+</body>
+</html>
