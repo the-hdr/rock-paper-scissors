@@ -3,8 +3,6 @@ var aiScore = 0;
 
 function calculateScore (humanChoice)
 {
-    //alert ("clicked!");
-
     // generating AI move:
     var max = 2;
     var min = 0;
@@ -22,7 +20,6 @@ function calculateScore (humanChoice)
     {
         return;
     }
-
 
     if (humanChoice == "rock" && aiChoice == "paper")
     {
@@ -57,8 +54,8 @@ function calculateScore (humanChoice)
     var humanScoreDiv = document.getElementById("human-score");
     var aiScoreDiv = document.getElementById("ai-score");
 
-    humanScoreDiv.innerHTML = humanScore;
-    aiScoreDiv.innerHTML = aiScore;
+    humanScoreDiv.innerHTML = "Score: " + humanScore;
+    aiScoreDiv.innerHTML = "Score: " + aiScore;
 
     // deciding if the game is over yet:
     if (humanScore == 5 || aiScore == 5)
