@@ -7,13 +7,32 @@ function calculateScore (humanChoice)
     var max = 2;
     var min = 0;
     var aiMoveIndex = Math.floor(Math.random() * (max - min + 1)) + min;
-        
-    //alert ("Beyond random number point!");
 
     const moves = ["rock", "paper", "scissors"];
     var aiChoice = moves[aiMoveIndex];
 
-    //alert ("human-choice: " + humanChoice + " :: ai-choice: " + aiChoice);
+    // getting variables ready that will be used for changing the
+    // background-color of divs:
+    const humanChoiceDiv = "human-" + humanChoice;
+    const aiChoiceDiv = "ai-" + aiChoice;
+
+    // changing the background-color of the required divs:
+    const humanScoreDivColor = document.getElementById(humanChoiceDiv);
+    const aiScoreDivColor = document.getElementById(aiChoiceDiv);
+
+    humanScoreDivColor.style.backgroundColor = "";
+    aiScoreDivColor.style.backgroundColor = "";
+
+    humanScoreDivColor.classList.add('red');
+    aiScoreDivColor.classList.add('blue');
+
+    setTimeout(() => {
+        humanScoreDivColor.classList.remove('red');
+        aiScoreDivColor.classList.remove('blue');
+
+        humanScoreDivColor.style.backgroundColor = "black";
+        aiScoreDivColor.style.backgroundColor = "black";
+      }, 500); // 500 milliseconds = 0.5 seconds
 
     // scoring:
     if (humanChoice == aiChoice)
@@ -72,7 +91,7 @@ function calculateScore (humanChoice)
         humanScore = 0;
         aiScore = 0;
         
-        humanScoreDiv.innerHTML = humanScore;
-        aiScoreDiv.innerHTML = aiScore;
+        humanScoreDiv.innerHTML = "Score: " + humanScore;
+        aiScoreDiv.innerHTML = "Score: " + aiScore;
     }
 }
