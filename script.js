@@ -3,7 +3,7 @@ var aiScore = 0;
 
 function calculateScore (humanChoice)
 {
-    // generating AI move:
+    // generating AI's move:
     var max = 2;
     var min = 0;
     var aiMoveIndex = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -32,7 +32,7 @@ function calculateScore (humanChoice)
 
         humanScoreDivColor.style.backgroundColor = "black";
         aiScoreDivColor.style.backgroundColor = "black";
-      }, 500); // 500 milliseconds = 0.5 seconds
+      }, 500); 
 
     // scoring:
     if (humanChoice == aiChoice)
