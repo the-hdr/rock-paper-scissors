@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+    color: yellow;
+
+    font-family: "Press Start 2P";
+}
+
+.header
+{
+    width: 100vw;
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: black;
+
+    font-size: 250%;
+}
+
+.main-menu-button
+{
+    width: 20%;
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+.main-menu-button:hover
+{
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;    
+}
+
+.main-menu-button:active
+{
+    background-color: rgb(65, 65, 65);
+}
+
+.big-button
+{
+    width: 20%;
+    height: 20%;
+}
+
+.game-button
+{
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+
+    width: 8vw;
+    height: 20vh;
+}
+
+.game-button:hover
+{
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+}
+
+.game-button:active
+{
+    background-color: rgb(65, 65, 65);
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 70vh;
+    
+    background-color: rgb(20, 20, 20);
+    color: yellow;
+}
+
+.game-cards
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.game-card
+{
+    border: 1px solid yellow;
+    padding: 1rem;
+}
+
+.footer
+{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
+}
+
+/* #player-rock
+{
+    background-color: rgb(255, 108, 108);
+}
+
+#ai-paper
+{
+    background-color: rgb(34, 123, 255);
+} */
