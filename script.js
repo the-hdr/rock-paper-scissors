@@ -63,9 +63,6 @@ function calculateScore (humanChoice)
     // deciding if the game is over yet:
     if (humanScore == 5 || aiScore == 5)
     {        
-        humanScoreDiv.innerHTML = humanScore;
-        aiScoreDiv.innerHTML = aiScore;
-        
         if (humanScore == 5)
         {
             alert ("Human won!\n");
