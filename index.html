@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS</title>
-    <script src="script.js"></script>
+
+    <title>Rock.Paper.Scissors | Main Menu </title>
+
+    <!-- adding CSS: -->
+    <link rel="stylesheet" href="css/main-styles.css">
+
+    <!-- adding favicon: -->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&family=Press+Start+2P&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <button class="move-option" id="rock" onclick="calculateScore('rock')">Rock</button>
-    <button class="move-option" id="paper" onclick="calculateScore('paper')">Paper</button>
-    <button class="move-option" id="scissors" onclick="calculateScore('scissors')">Scissors</button>
+    <div class="header">
+        Rock.Paper.Scissors
+    </div> 
 
+    <div class="content">
+        <button class="main-menu-button">
+            <a href="play.html"> Play </a>
+        </button> <br>
 
-    <div class="score">
-        <p> Human Score: <p id="human-score"> 0 </p> </p>
-        <p> AI Score: <p id="ai-score"> 0 </p> </p>
+        <button class="main-menu-button">
+            <a href="rules.html"> Rules </a>
+        </button> <br>
+
+        <button class="main-menu-button">
+            <a href="quit.html"> Quit </a>
+        </button> <br>
+    </div>
+
+    <div class="footer">
+        Copyright © the-hdr 2023
     </div>
 </body>
 </html>
