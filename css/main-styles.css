@@ -64,10 +64,10 @@
     cursor: pointer;
 }
 
-.game-button:active
+/* .game-button:active
 {
-    /* background-color: rgb(65, 65, 65); */
-}
+    background-color: rgb(65, 65, 65);
+} */
 
 .content
 {
